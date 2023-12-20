@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-size: 22px;
+        flex-direction: row;
+        border: 2px solid black;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+        text-decoration: none;
+        float: left;
+        flex-direction: column;
+        width: 20%;
+    }
+
+    #imig {
+
+        width: 20%;
+    }
+
+    #heading {
+        text-align: center;
+        background-color: rgba(10, 148, 5, 0.89);
+        flex-direction: column;
+        margin: 13px auto;
+        padding: 105px 23px;
+    }
+
+    form {
+        width: 40%;
+        width: 40%;
+        padding: 23px 23px;
+        text-align: center;
+    }
+
+    #images {
+        width: 20%;
+        text-align: center;
+        padding: auto;
+        float: left;
+        height: 72px;
+        width: 72px;
+
+    }
+
+    
+    #middle{
+        flex-direction: column;
+    }
+    .button{
+        background-color: rgb(124, 172, 204);
+        margin: 13px 23px;
+        height: 40px;
+        width: 30%;
+    }
+</style>
+
+<body>
+
+    <ul id="heading">
+
+        <li><img id="images" src="/logo.jpg" alt="gndec logo"></li>
+        <li><a href="gndec.ac.in">home</a></li>
+        <li><a href="#">contact us</a></li>
+        <li><a href="https://gndec.ac.in/?q=node/2">about us</a></li>
+        <li><a href="guru.gndec.ac.in/21_22">login</a></li>
+    </ul>
+    <div id="middle">
+        <form action="backend.cpp">
+            <h1> admission form to participate in Athletic Meet in GNDEC 2022</h1>
+            <h1>Fill your information</h1>
+            <div>
+                First name: <input type="text" name="myname"><br><br>
+                Last name: <input type="text" name="myname"><br><br>
+            </div>
+            <div>
+                Date of birth: <input type="date" name="mybirthday"><br><br>
+            </div>
+            <div>
+                university rollnumber: <input type="number" name="myadhaar"><br><br>
+            </div>
+            <div>
+                department: <input type="text" name="myqualification"><br><br>
+            </div>
+            <div>
+                Gender<br>
+                Male: <input type="radio" name="gender">
+                Female: <input type="radio" name="gender">
+                Others: <input type="radio" name="gender">
+            </div><br>
+            <div>
+                Phone number: <input type="number"><br>
+            </div>
+            <div>
+                <div>
+                    Time of submission: <input type="time" name="mytime"><br><br>
+
+                    <div>Email: <input type="email"></div>
+
+                    <br>
+                    <div>
+                        <!--impootant information regaring participation   -->
+                        <em>Every candidate can participate in <strong>NOT MORE THAN THREE</strong> events.</em>
+                    </div>
+                    <br>
+                    <div>
+                        <strong>EVENTS:-</strong> <br> <strong>Athletic events: </strong>
+                    </div>
+                    <br>
+                    <div>
+                        1. 100 meter<input type="radio"><br> 2. 200 meter<input type="radio"> <br> 3.1500 meter<input
+                            type="radio"><br>
+                        4.5000 meter<input type="radio"> <br> 5.10,000 meter <input type="radio"><br> 6.100 meter hurdle
+                        <input type="radio">
+                    </div> <br>
+                    <div>
+                        <strong> Field events:</strong>
+                    </div> <br>
+                    <div>
+                        1. High Jump<input type="radio"><br> 2. Long Jump<input type="radio"><br> 3.Triple jump <input
+                            type="radio"><br>
+                        4.Shot-put<input type="radio"><br> 5. Discus Throw<input type="radio"><br> 6.hammer throw<input
+                            type="radio"><br> 7.Tug-of-war<input type="radio">
+                    </div>
+                </div>
+                <input class="button" type="submit" value="submit here"><br>
+                <input class="button" type="reset" value="reset all">
+
+            </div>
+            <br>
+        </form>
+        <div>
+            <img id="imig"
+                src="https://th.bing.com/th/id/R.fc5e545e9c3e47547026771b0d8fc61f?rik=zf1N9k6p%2bzJDvQ&riu=http%3a%2f%2fwww.trackandfield.co.uk%2fwp-content%2fuploads%2f2013%2f01%2fsally-perason2.jpg&ehk=4lc4CjOGNR6nUk%2fTj8i0ACZrqtyeJbZrG%2feo4Vyh3kY%3d&risl=&pid=ImgRaw&r=0"
+                alt="">
+
+            <img id="imig" src="https://th.bing.com/th/id/OIP.qu1waxjb-q0ukhbWe-npSgHaEo?pid=ImgDet&rs=1" alt="">
+        </div>
+    </div>
+
+
+    
+
+</body>
+
+</html>

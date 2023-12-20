@@ -1,0 +1,8 @@
+{
+    "C_Cpp.autoAddFileAssociations": false,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.default.enableConfigurationSquiggles": true
+}

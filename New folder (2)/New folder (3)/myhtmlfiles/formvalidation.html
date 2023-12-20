@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>data validation</title>
+</head>
+<style>
+    .errorhere {
+        color: red;
+    }
+
+    .naming input {
+        width: 40%;
+        color: blue;
+    }
+</style>
+
+<body>
+    <h1>WORLD BEST FORM</h1>
+    <forms action="/New folder (2)/New folder (3)/myhtmlfiles/myaction.php" name="myform"
+        onsubmit="return validate_form()" method="post">
+        <div class="naming" id="name">FIRST NAME : <input type="text" name="fname">
+            <span class="errorhere"></span>
+        </div><br>
+        <div class="naming" id="phone" > *Number : <input type="phone" name="pname" required>
+            <span class="errorhere"></span>
+        </div><br>
+        <div class="naming" id="email">email : <input type="email" name="ename">
+            <span class="errorhere"></span>
+        </div><br>
+        <div class="naming" id="password"> Password : <input type="password" name="passname">
+            <span class="errorhere"></span>
+        </div><br>
+        <div class="naming" id="cpassword"> Comfirm Password : <input type="password" name="passname">
+            <span class="errorhere"></span>
+        </div><br>
+        <hr>
+        <div><button>submit</button></div>
+        <div><input class="btn" type="submit" value="submit"> </div>
+    </forms>
+</body>
+<script>
+    function set_error(id, error) {
+        //set eeror inside the tag id
+
+        element = document.getElementsById(id);
+        element.document.getElementsByClassName("errorhere")[0].innerHTML = error;
+    }
+
+    function validate_form() {
+        //validate form
+        //it get all the documents from form
+        var return_value = true;
+        var nam = document.forms['myform']["fname"].value;
+        if (nam.length < 10) {
+            set_error("name", "length is too short")
+            return_value = false;
+        }
+        return return_value;
+    }
+</script>
+
+</html>
